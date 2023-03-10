@@ -17,6 +17,9 @@ app.use(cookieParser());
 app.use(ErrorHandler)
 app.use('/',router);
 
+app.get('/',(req,res)=>{
+res.send('Hello')
+})
 
 const port = 9090
 
