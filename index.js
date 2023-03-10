@@ -17,10 +17,7 @@ app.use(cookieParser());
 app.use(ErrorHandler)
 app.use('/',router);
 
-// app.get('/*',(req,res)=>{
-//     app.use(express.static(path.resolve(__dirname,'CLIENT','dist')))
-//     res.sendFile(path.resolve(__dirname,'CLIENT','dist'))
-// })
+
 const port = 9090
 
 app.listen(port, () => {
