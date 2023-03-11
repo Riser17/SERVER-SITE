@@ -15,11 +15,8 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(cookieParser());
 app.use(ErrorHandler)
-app.use('/',router);
+app.use('/api',router);
 
-app.get('/api',(req,res)=>{
-res.send('Hello')
-})
 
 const port = 9090
 
